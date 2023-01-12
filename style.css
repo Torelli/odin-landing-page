@@ -1,7 +1,17 @@
+:root {
+    --background-color: #1f2937;
+    --secondary-background: #3882f6;
+    --quote-background: #e5e7eb;
+    --primary-text: #f9faf8;
+    --secondary-text: #e5e7eb;
+    --alternative-text: #1f2937;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 html {
@@ -9,9 +19,11 @@ html {
 }
 
 header {
-    background-color: #1f2937;
+    position: fixed;
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-around;
+    width: 100%;
     padding: 20px;
 }
 
@@ -23,10 +35,54 @@ header ul {
 header ul li {
     list-style: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: var(--secondary-text);
 }
 
 header h1 {
     font-size: 24px;
-    color: #f9faf8;
+    color: var(--primary-text);
+}
+
+main {
+    padding-top: 65px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+.hero-container {
+    flex-basis: 400px;
+}
+
+.hero-container h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-text);
+}
+
+.hero-container p {
+    font-size: 18px;
+    color: var(--secondary-text);
+    margin-bottom: 10px;
+}
+
+.hero img {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--alternative-text);
+    cursor: pointer;
 }
