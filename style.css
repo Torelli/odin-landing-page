@@ -101,6 +101,7 @@ button {
 .info h2 {
     color: var(--alternative-text);
     margin-bottom: 25px;
+    font-size: 36px;
     font-weight: 900;
 }
 
@@ -134,4 +135,24 @@ button {
     width: 150px;
     flex: 1 0 150px;
     border-radius: 10px;
+}
+
+.quote {
+    background-color: var(--quote-background);
+    font-size: 36px;
+    color: var(--alternative-text);
+    padding: 10% 25%;
+}
+
+.quotation {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.author::before {
+    content: "- ";
+}
+
+.author {
+    text-align: right;
 }
