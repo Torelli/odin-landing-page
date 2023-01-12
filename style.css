@@ -5,6 +5,7 @@
     --primary-text: #f9faf8;
     --secondary-text: #e5e7eb;
     --alternative-text: #1f2937;
+    --second-alt-text: #666;
 }
 
 * {
@@ -47,6 +48,10 @@ main {
     padding-top: 65px;
 }
 
+section {
+    padding: 30px;
+}
+
 .hero{
     display: flex;
     justify-content: center;
@@ -81,9 +86,52 @@ main {
 button {
     background-color: var(--secondary-background);
     color: var(--primary-text);
-    padding: 5px 20px;
+    padding: 8px 30px;
+    font-size: 15px;
     border-radius: 5px;
     border: 1px solid var(--alternative-text);
     font-weight: bold;
     cursor: pointer;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h2 {
+    color: var(--alternative-text);
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+}
+
+.card p {
+    flex: 1 0 150px;
+    width: 150px;
+    color: var(--second-alt-text);
+}
+
+.icon {
+    border: 2px solid var(--secondary-background);
+    color: var(--secondary-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 150px;
+    flex: 1 0 150px;
+    border-radius: 10px;
 }
